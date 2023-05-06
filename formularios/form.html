@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formularios</title>
+    <style>
+        fieldset{
+            border: 5px solid;
+            border-bottom-color: blue;
+          
+        }
+    </style>
 </head>
 <body>
-    <form action="cadastro.php">
-        <p><label for="iname">Nome:</label>
-             <input type="text" name="nome" id="iname">
+    
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="isfut"> <label for="isfut">futebol</label><br>
+            <input type="checkbox" name="esba" id="isba"> <label for="isba">basqete<br></label>
+            <input type="checkbox" name="evolei" id="isvolei"> <label for="isvolei">volei</label><br>
+            <input type="checkbox" name="esna" id="isna"> <label for="isna">natação</label><br>
+            <input type="checkbox" name="essal" id="issal"> <label for="issal">futsal</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="ismas"><label for="ismas">Masculino</label>
+            <input type="radio" name="sexo" id="isfem"><label for="isfem">Feminino</label>
+        </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
 
-        <p><label for="isobrenome">Sobrenome:</label>
-             <input type="text" name="sobrenome" id="isobrenome">
-        </p>
-        <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
