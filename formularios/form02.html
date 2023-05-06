@@ -9,15 +9,14 @@
 <body>
     <form action="" method="get">
        <p>
-           <label for="in1">Numero1</label>
-            <input type="number" name="n1" id="in1" min="0" max="50" required>        
+           <label for="inum">Numero1</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5"  oninput="ival.innerHTML = Number(inum.value)">        
+            <output id="ival">5</output>
        </p>
-       <p>
-           <label for="in2">Numero2</label>
-            <input type="number" name="n2" id="in2" min="0" max="50" required>        
-       </p>
+       
         <p>
-
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
